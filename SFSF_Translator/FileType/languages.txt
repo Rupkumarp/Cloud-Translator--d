@@ -1,0 +1,27 @@
+﻿Arabic	ar-AR	arAR
+Chinese (simplified)	zh-CN	zhCN
+Chinese (traditional)	zh-TW	zhTW
+Croatian	hr-HR	hrHR
+Czech	cs-CZ	csCZ
+Dutch	nl-NL	nlNL
+English	en-US	enUS
+French (Quebec)	fr-CA	frCA
+French (France)	fr-FR	frFR
+German	de-DE	deDE
+Greek	el-GR	elGR
+Hebrew	he-IL	heIL
+Hungarian	hu-HU	huHU
+Indonesian	id-ID	idID
+Italian	it-IT	itIT
+Japanese	ja-JP	jaJP
+Korean	ko-KR	koKR
+Polish	pl-PL	plPL
+Portuguese (Brazil)	pt-BR	ptBR
+Portuguese (Portugal)	pt-PT	ptPT
+Romanian	ro-RO	roRO
+Russian	ru-RU	ruRU
+Serbian	sr-SP	srSP
+Slovenian	sl-si	slSI
+Spanish	(Spain) es-ES	esES
+Spanish (LA)	es-CO	esCO
+Turkish	tr-TR	trTR

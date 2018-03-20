@@ -1,0 +1,6 @@
+﻿101 -> ***** SLC SECTION****
+<line>,0
+<id>,0
+<translation_status>,0
+<title>,0
+<explanation>,0

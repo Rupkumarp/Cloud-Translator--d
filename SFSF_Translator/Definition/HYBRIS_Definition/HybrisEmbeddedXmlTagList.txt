@@ -1,0 +1,5 @@
+﻿#******************************************************************
+#Hybris Embedded Xml Tagname Configuration File
+#SearchSetting:[MainTag]|[SubTag that needs to be considered]
+#******************************************************************
+Resource|label|hint|alert|

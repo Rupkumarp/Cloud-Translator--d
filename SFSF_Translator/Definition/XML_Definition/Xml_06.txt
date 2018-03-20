@@ -1,0 +1,4 @@
+7.1 xml org chart config
+<label>,0
+<shortlabel>,0
+<description>,0

@@ -1,0 +1,26 @@
+﻿##################################
+#RMK Tags which are kept within TR
+#v1.0 21 August 2015
+#Last Change: Laurent Devroede - initial values
+##################################
+a
+b
+bdi
+bdo
+big
+br
+font
+h1
+h2
+h3
+h4
+h5
+h6
+hr
+i
+q
+small
+strong
+style
+sup
+ui:include

@@ -1,0 +1,17 @@
+﻿##################################
+#RMK Special attributes extraction
+#v1.0 21 August 2015
+#Last Change: Laurent Devroede - initial values
+#
+#%LVL%PARAM1[%PARAM2[%PARAM3]]
+#LVL1: Simple attribute value 		PARAM1: attribute name 
+#LVL2: Attribute value call 		PARAM1: attribue name  	PARAM2: attribute VALUE
+#LVL3: Attribute value condition	PARAM1: attribute name 	PARAM2: attribute VALUE		PARAM3: node name
+#ALL PARAMS must be lower-cased 
+##################################
+%1%title
+%1%alt
+%1%placeholder
+%1%value
+%2%href%categorySingleLink.getSeoUrlByName
+%3%test%page.categorytitle%c:when

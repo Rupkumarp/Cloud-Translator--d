@@ -1,0 +1,14 @@
+10.1 -> 10.3 6.1->6.5 ***** PLAN TEMPLATE DOCTYPE obj-plan-template****
+<obj-plan-name>,0
+<text>,0
+<category-name>,0
+<field-label>,0
+<field-description>,0
+<enum-label>,0
+<column-label>,0
+<table-row-label>,0
+<scale-name>,0
+<mapping-description>,0
+<action-label>,0
+<state-label>,0
+<transcript-detail-portlet-label>,0

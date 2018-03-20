@@ -1,0 +1,322 @@
+﻿###CP definition file
+######################################
+@Routing Maps (5.1)
+%Route Map Name
+%Route Map Step
+Route Description
+Step Name
+Step Description
+Step Introduction mouseover text
+Step Name after Completion
+Exit Button Text
+Step Exit Text
+Previous Step Exit Button Text
+Previous Step Exit Text
+######################################
+@Status Sets (5.6-5.7-5.8-5.9)
+%Status Set Name
+%Status Name
+Internal Label
+Candidate Label
+Next Step Text
+Referrer Label
+Referrer Next Step Text
+######################################
+@Rating Scale (5.10)
+%Scale Name
+%Score
+Description
+Detailed information
+######################################
+@Rating Scale Definition (5.10.1)
+%Scale Name
+Scale description
+Low
+High Increment
+######################################
+@Rating Scale Scores (5.10.2)
+%Scale Name
+Score
+Label
+Description
+######################################
+@Matrix Grid Report Icon (7.3.1)
+%Matrix Name
+%Option ID
+Field Name
+Label
+######################################
+@Matrix Grid Performance-Potential (7.3.2)
+%Process
+Report Name
+X Axis Label
+Y Axis Label
+Label(0 0)
+Label(0 1)
+Label(0 2)
+Label(1 0)
+Label(1 1)
+Label(1 2)
+Label(2 0)
+Label(2 1)
+Label(2 2)
+######################################
+@Matrix Grid How vs What (7.3.3)
+%Process
+Report Name
+X Axis Label
+Y Axis Label
+Label(0 0)
+Label(0 1)
+Label(0 2)
+Label(1 0)
+Label(1 1)
+Label(1 2)
+Label(2 0)
+Label(2 1)
+Label(2 2)
+######################################
+@Matrix Grid Rating Scales (7.3.4)
+%Rating Scale Name
+Value 1
+Value 2
+Value 3
+######################################
+@Text replacement (7.5)
+%Default Text
+Replace with text
+######################################
+@Compensation Plan template - Column Designer (9.1A)
+%Template Name
+Form Fields Column Name
+Navigation Fields Label
+######################################
+@Compensation Plan template - Budget (9.1B)
+%Template Name
+%Budget Calculation use for
+Budget Label
+######################################
+@Compensation Plan template - Budget Rule (9.1C)
+%Template Name
+%Budget Rule use for
+Budget Exceed Warn Message
+######################################
+@Compensation Plan template - Instructional text (9.1D)
+%Template Name
+%Type (Salary,...)
+Content
+######################################
+@PM Form Names (10.12)
+%Form
+Form Name
+######################################
+@LMS - Rating Criteria (13.1)
+%Competency description
+%Rating Label
+Criteria
+######################################
+@LMS - Learning items (13.2)
+Title
+Description
+######################################
+@LMS - Curricula (13.3)
+Curriculum Title
+Curriculum Description
+######################################
+@LMS - Questionnaire Survey (13.4.1)
+%Survey ID
+Survey Name
+Survey Description
+######################################
+@LMS - Questionnaire Survey Questions (13.4.2)
+%Survey ID
+%Page ID
+Survey Instructions
+Page Title
+Page Instructions
+Question
+Answer Choice 1
+Answer Choice 2
+Answer Choice 3
+Answer Choice 4
+Answer Choice 5
+######################################
+@@LMS - Deployment Location (13.5)
+%Deployment Location ID
+Description
+######################################
+@@LMS - Completion status (13.6)
+%Completion Status ID
+Description
+######################################
+@@LMS - Delivery methods (13.7)
+%Delivery Method ID
+Description
+######################################
+@@LMS - Item Types (13.8)
+%Item Type ID
+Description
+######################################
+@@LMS - Subject Areas (13.9)
+%Subject Area ID
+Description
+######################################
+@@LMS - Rating scales (13.10)
+%Rating Scale ID
+%Rating
+Rating Label
+######################################
+@@LMS - Report group (13.11)
+%Report group ID
+Description
+######################################
+@@LMS - Programs (13.12)
+%Program ID
+Program Name
+######################################
+@@LMS - Assignments (13.13)
+%Assignment Type ID
+Description
+######################################
+@@LMS - Registration Status (13.14)
+%Registraion Status ID
+Description
+######################################
+@@LMS - Approval Process (13.15)
+%Process ID
+Step Name
+######################################
+@@LMS - Approval Roles (13.16)
+%Approval Role ID
+Description
+######################################
+@@Dashboards (15.1)
+%Dashboard_Name
+Dashboard Name
+######################################
+@@Dashboards - Tile Based (15.2)
+%Tile Based Dashboard Name
+Dashboard Name
+Description
+######################################
+@@Design Employee Files Layout (15.3)
+%Layout Name
+%Portlet Name
+Dashboard Name
+Portlet Title
+Portlet Description
+######################################
+@@Manage Configuration UI (9.2)
+%ID Name
+ID-Title Type User Defined
+ID-Title Format
+%Group Name
+Group-Title Type User Defined
+Group-Title Format
+######################################
+@@Internal and External Applicant Search Setting (5.21)
+Field Label
+######################################
+@@Personal Data - Personal Information (16.1)
+Last Name
+First Name
+######################################
+@@Personal Data - Job Information (16.2)
+Job Title
+######################################
+@@Personal Data - Address and Contact Information (16.3)
+Address Line 1
+Address Line 2
+City
+Country
+######################################
+@@Personal Data - Formal Education Multiple (16.4)
+School
+Major
+Degree
+######################################
+@@Personal Data - Certifications or Licenses Multiple (16.5)
+Certification or License
+Description
+Institution
+######################################
+@@Personal Data - Work Experience within Company Multiple (16.6)
+Title 
+Department
+######################################
+@@Personal Data - Previous Employment Multiple (16.7)
+Company Name
+Type of Business
+Title 
+######################################
+@@Goal Plan Multiple (20.1)
+Goal Name
+Metric
+Milestone
+Deliverable
+######################################
+@@Performance Review - Objectives (21.1)
+Employee Comments
+Manager Comments
+######################################
+@@Performance Review - Core Values (21.2)
+Employee Comments
+Manager Comments
+######################################
+@@Performance Review - Role Specific Competencies (21.3)
+Employee Comments
+Manager Comments
+######################################
+@@Performance Review - Mid Year Comments (21.4)
+Employee Comments
+Manager Comments
+######################################
+@@Performance Review - Summary (21.5)
+Employee Comments
+Manager Comments
+######################################
+@@Career Development Plan - Development Goals Multiple (23.1)
+Development Goal
+Measure of Success
+Recommended Employee Action
+######################################
+@@Learning Content - Learning Items Multiple (24.1)
+Title
+Description
+######################################
+@@Jam Group - Tab 1 Title Multiple panel 1 (25.1)
+Panel 1 Title
+Panel 1 Item 1
+Panel 1 Item 2
+Panel 1 Item 3
+######################################
+@@Jam Group - Tab 1 Title Multiple panel 2 (25.2)
+Panel 2 Title
+Panel 2 Item 1
+Panel 2 Item 2
+Panel 2 Item 3
+######################################
+@@Jam Group - Tab 1 Title Multiple panel 3 (25.3)
+Panel 3 Title 3
+Panel 3 Item 1
+Panel 3 Item 2
+Panel 3 Item 3
+######################################
+@@Jam Group - Tab 2 Title Multiple panel 1 (25.4)
+Panel 1 Title
+Panel 1 Item 1
+Panel 1 Item 2
+Panel 1 Item 3
+######################################
+@@Jam Group - Tab 2 Title Multiple panel 2 (25.5)
+Panel 2 Title
+Panel 2 Item 1
+Panel 2 Item 2
+Panel 2 Item 3
+######################################
+@@Jam Group - Tab 2 Title Multiple panel 3 (25.6)
+Panel 3 Title 3
+Panel 3 Item 1
+Panel 3 Item 2
+Panel 3 Item 3
+######################################

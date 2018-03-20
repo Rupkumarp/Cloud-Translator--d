@@ -1,0 +1,10 @@
+﻿#******************************************************************
+#Hybris Translation Configuration File
+#Searchdir:[subfolder to search into]|[search_matches]|[exclusions]
+#if subfolder ends with *, search recursively, otherwise search only in the base folder.
+#******************************************************************
+Searchdir:ext-publicsector\insurancestore\resources\*|*.impex|Multilingual|
+Searchdir:ext-publicsector\insuranceacceleratorstorefront\resources\*|*.impex|Multilingual|
+Searchdir:ext-publicsector\insurancecheckout\acceleratoraddon\web\webroot\WEB-INF\messages\|en.properties|Monolingual|
+Searchdir:ext-publicsector\insuranceacceleratorstorefront\acceleratoraddon\web\webroot\WEB-INF\messages\|en.properties|Monolingual|
+Searchdir:ext-publicsector\insuranceacceleratorstorefront\resources\*|en.properties|Monolingual|

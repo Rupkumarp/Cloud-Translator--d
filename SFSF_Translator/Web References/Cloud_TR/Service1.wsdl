@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUniqueScriptNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUniqueScriptNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUniqueScriptNamesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchontarget">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="search_string" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="table_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchontargetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchontargetResult" type="tns:ArrayOfAnswer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnswer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Answer" nillable="true" type="tns:Answer" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Answer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IDext" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="enUS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="target" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="key8_objectname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="key6_Domainname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="length" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="was_cut" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="result" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="wildcard" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="update_entry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mytype" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="myscriptID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="myUser" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="myIDext" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="myTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enUS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_entryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="update_entryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchonenUS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="search_string" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="table_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchonenUSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchonenUSResult" type="tns:ArrayOfAnswer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchonidext_range">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IDext_from" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IDext_to" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="table_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchonidext_rangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchonidext_rangeResult" type="tns:ArrayOfAnswer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchonidext">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IDext" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="table_name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchonidextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchonidextResult" type="tns:ArrayOfAnswer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SystemName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SystemNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_SystemNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterTables">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterTablesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterTablesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreTranslate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TableName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SearchText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreTranslateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreTranslateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="UTCoffset" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskDetail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateActivityResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserActivityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreviousDateRecords">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreviousDateRecordsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPreviousDateRecordsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCloud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CT" type="tns:CloudTr" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CloudTr">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="extID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Source" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Target" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourceLang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TargetLang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Customer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Instance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Datatype" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Maxlength" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerSpecific" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCloudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCloudResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreTranslateFromCloud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CT" type="tns:CloudTr" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckCustomer" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckInstance" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreTranslateFromCloudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreTranslateFromCloudResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInstanceList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCustomerInstanceListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerInstanceListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPretranslateFileID">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPretranslateFileIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPretranslateFileIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestXliff">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestXliffResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTranslation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CT" type="tns:CloudTr" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckCustomer" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckInstance" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="OnlySourceCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTranslationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTranslationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreTranslateFromCloud_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CT" type="tns:CloudTr" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckCustomer" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckInstance" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreTranslateFromCloud_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreTranslateFromCloud_NewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_DBCorrections">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="extID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Source" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Target" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_DBCorrectionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Update_DBCorrectionsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchCloud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchString" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isFullstring" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SE" type="tns:SearchingField" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="SearchingField">
+        <s:restriction base="s:string">
+          <s:enumeration value="Target" />
+          <s:enumeration value="Source" />
+          <s:enumeration value="Both" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SearchCloudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchCloudResult" type="tns:ArrayOfCloudTr" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCloudTr">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CloudTr" nillable="true" type="tns:CloudTr" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAnalyzedRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CT" type="tns:CloudTr" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckDataType" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckResname" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckCustomer" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bCheckInstance" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAnalyzedRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAnalyzedRecordResult" type="tns:CloudTr" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUniqueScriptNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUniqueScriptNames" />
+  </wsdl:message>
+  <wsdl:message name="GetUniqueScriptNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUniqueScriptNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchontargetSoapIn">
+    <wsdl:part name="parameters" element="tns:searchontarget" />
+  </wsdl:message>
+  <wsdl:message name="searchontargetSoapOut">
+    <wsdl:part name="parameters" element="tns:searchontargetResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_entrySoapIn">
+    <wsdl:part name="parameters" element="tns:update_entry" />
+  </wsdl:message>
+  <wsdl:message name="update_entrySoapOut">
+    <wsdl:part name="parameters" element="tns:update_entryResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchonenUSSoapIn">
+    <wsdl:part name="parameters" element="tns:searchonenUS" />
+  </wsdl:message>
+  <wsdl:message name="searchonenUSSoapOut">
+    <wsdl:part name="parameters" element="tns:searchonenUSResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchonidext_rangeSoapIn">
+    <wsdl:part name="parameters" element="tns:searchonidext_range" />
+  </wsdl:message>
+  <wsdl:message name="searchonidext_rangeSoapOut">
+    <wsdl:part name="parameters" element="tns:searchonidext_rangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchonidextSoapIn">
+    <wsdl:part name="parameters" element="tns:searchonidext" />
+  </wsdl:message>
+  <wsdl:message name="searchonidextSoapOut">
+    <wsdl:part name="parameters" element="tns:searchonidextResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_SystemNameSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_SystemName" />
+  </wsdl:message>
+  <wsdl:message name="Get_SystemNameSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_SystemNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTablesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterTables" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTablesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreTranslateSoapIn">
+    <wsdl:part name="parameters" element="tns:PreTranslate" />
+  </wsdl:message>
+  <wsdl:message name="PreTranslateSoapOut">
+    <wsdl:part name="parameters" element="tns:PreTranslateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateActivity" />
+  </wsdl:message>
+  <wsdl:message name="UpdateActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserList" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserActivity" />
+  </wsdl:message>
+  <wsdl:message name="GetUserActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviousDateRecordsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreviousDateRecords" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviousDateRecordsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreviousDateRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCloudSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCloud" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCloudSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCloudResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreTranslateFromCloudSoapIn">
+    <wsdl:part name="parameters" element="tns:PreTranslateFromCloud" />
+  </wsdl:message>
+  <wsdl:message name="PreTranslateFromCloudSoapOut">
+    <wsdl:part name="parameters" element="tns:PreTranslateFromCloudResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInstanceListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerInstanceList" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInstanceListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerInstanceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPretranslateFileIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPretranslateFileID" />
+  </wsdl:message>
+  <wsdl:message name="GetPretranslateFileIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPretranslateFileIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestXliffSoapIn">
+    <wsdl:part name="parameters" element="tns:TestXliff" />
+  </wsdl:message>
+  <wsdl:message name="TestXliffSoapOut">
+    <wsdl:part name="parameters" element="tns:TestXliffResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTranslationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTranslation" />
+  </wsdl:message>
+  <wsdl:message name="GetTranslationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTranslationResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreTranslateFromCloud_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:PreTranslateFromCloud_New" />
+  </wsdl:message>
+  <wsdl:message name="PreTranslateFromCloud_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:PreTranslateFromCloud_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_DBCorrectionsSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_DBCorrections" />
+  </wsdl:message>
+  <wsdl:message name="Update_DBCorrectionsSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_DBCorrectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchCloudSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchCloud" />
+  </wsdl:message>
+  <wsdl:message name="SearchCloudSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchCloudResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAnalyzedRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAnalyzedRecord" />
+  </wsdl:message>
+  <wsdl:message name="GetAnalyzedRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAnalyzedRecordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="GetUniqueScriptNames">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Unique Script Names</wsdl:documentation>
+      <wsdl:input message="tns:GetUniqueScriptNamesSoapIn" />
+      <wsdl:output message="tns:GetUniqueScriptNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchontarget">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Answer class object</wsdl:documentation>
+      <wsdl:input message="tns:searchontargetSoapIn" />
+      <wsdl:output message="tns:searchontargetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_entry">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns true if sent properly</wsdl:documentation>
+      <wsdl:input message="tns:update_entrySoapIn" />
+      <wsdl:output message="tns:update_entrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchonenUS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Answer class object</wsdl:documentation>
+      <wsdl:input message="tns:searchonenUSSoapIn" />
+      <wsdl:output message="tns:searchonenUSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchonidext_range">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Answer class object</wsdl:documentation>
+      <wsdl:input message="tns:searchonidext_rangeSoapIn" />
+      <wsdl:output message="tns:searchonidext_rangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchonidext">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Answer class object</wsdl:documentation>
+      <wsdl:input message="tns:searchonidextSoapIn" />
+      <wsdl:output message="tns:searchonidextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SystemName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get System Name and Client)</wsdl:documentation>
+      <wsdl:input message="tns:Get_SystemNameSoapIn" />
+      <wsdl:output message="tns:Get_SystemNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTables">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get List of Tables</wsdl:documentation>
+      <wsdl:input message="tns:GetMasterTablesSoapIn" />
+      <wsdl:output message="tns:GetMasterTablesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get translation for PreTranslator</wsdl:documentation>
+      <wsdl:input message="tns:PreTranslateSoapIn" />
+      <wsdl:output message="tns:PreTranslateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Activity with timestamp</wsdl:documentation>
+      <wsdl:input message="tns:UpdateActivitySoapIn" />
+      <wsdl:output message="tns:UpdateActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get User list from Activity</wsdl:documentation>
+      <wsdl:input message="tns:GetUserListSoapIn" />
+      <wsdl:output message="tns:GetUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get User list from Activity</wsdl:documentation>
+      <wsdl:input message="tns:GetUserActivitySoapIn" />
+      <wsdl:output message="tns:GetUserActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousDateRecords">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets previous date records from Activity for task tracker</wsdl:documentation>
+      <wsdl:input message="tns:GetPreviousDateRecordsSoapIn" />
+      <wsdl:output message="tns:GetPreviousDateRecordsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCloud">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update DB.Cloud_TR table</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCloudSoapIn" />
+      <wsdl:output message="tns:UpdateCloudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslateFromCloud">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets translation from Cloud_TR table</wsdl:documentation>
+      <wsdl:input message="tns:PreTranslateFromCloudSoapIn" />
+      <wsdl:output message="tns:PreTranslateFromCloudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInstanceList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Customer and Instance</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerInstanceListSoapIn" />
+      <wsdl:output message="tns:GetCustomerInstanceListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPretranslateFileID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get List of FileID for Pretranslate</wsdl:documentation>
+      <wsdl:input message="tns:GetPretranslateFileIDSoapIn" />
+      <wsdl:output message="tns:GetPretranslateFileIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestXliff">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test xliff saved in bin directory for html translation test</wsdl:documentation>
+      <wsdl:input message="tns:TestXliffSoapIn" />
+      <wsdl:output message="tns:TestXliffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTranslation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets translation from Cloud_TR table</wsdl:documentation>
+      <wsdl:input message="tns:GetTranslationSoapIn" />
+      <wsdl:output message="tns:GetTranslationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslateFromCloud_New">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets translation from Cloud_TR table</wsdl:documentation>
+      <wsdl:input message="tns:PreTranslateFromCloud_NewSoapIn" />
+      <wsdl:output message="tns:PreTranslateFromCloud_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_DBCorrections">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cloud TR - DB Corrections</wsdl:documentation>
+      <wsdl:input message="tns:Update_DBCorrectionsSoapIn" />
+      <wsdl:output message="tns:Update_DBCorrectionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCloud">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cloud TR - Search Source\Target or both - returns CloudTR array</wsdl:documentation>
+      <wsdl:input message="tns:SearchCloudSoapIn" />
+      <wsdl:output message="tns:SearchCloudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnalyzedRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Single row Cloudtr</wsdl:documentation>
+      <wsdl:input message="tns:GetAnalyzedRecordSoapIn" />
+      <wsdl:output message="tns:GetAnalyzedRecordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUniqueScriptNames">
+      <soap:operation soapAction="http://tempuri.org/GetUniqueScriptNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchontarget">
+      <soap:operation soapAction="http://tempuri.org/searchontarget" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_entry">
+      <soap:operation soapAction="http://tempuri.org/update_entry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchonenUS">
+      <soap:operation soapAction="http://tempuri.org/searchonenUS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchonidext_range">
+      <soap:operation soapAction="http://tempuri.org/searchonidext_range" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchonidext">
+      <soap:operation soapAction="http://tempuri.org/searchonidext" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SystemName">
+      <soap:operation soapAction="http://tempuri.org/Get_SystemName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTables">
+      <soap:operation soapAction="http://tempuri.org/GetMasterTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslate">
+      <soap:operation soapAction="http://tempuri.org/PreTranslate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <soap:operation soapAction="http://tempuri.org/UpdateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap:operation soapAction="http://tempuri.org/GetUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivity">
+      <soap:operation soapAction="http://tempuri.org/GetUserActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousDateRecords">
+      <soap:operation soapAction="http://tempuri.org/GetPreviousDateRecords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCloud">
+      <soap:operation soapAction="http://tempuri.org/UpdateCloud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslateFromCloud">
+      <soap:operation soapAction="http://tempuri.org/PreTranslateFromCloud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInstanceList">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerInstanceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPretranslateFileID">
+      <soap:operation soapAction="http://tempuri.org/GetPretranslateFileID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestXliff">
+      <soap:operation soapAction="http://tempuri.org/TestXliff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranslation">
+      <soap:operation soapAction="http://tempuri.org/GetTranslation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslateFromCloud_New">
+      <soap:operation soapAction="http://tempuri.org/PreTranslateFromCloud_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_DBCorrections">
+      <soap:operation soapAction="http://tempuri.org/Update_DBCorrections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCloud">
+      <soap:operation soapAction="http://tempuri.org/SearchCloud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnalyzedRecord">
+      <soap:operation soapAction="http://tempuri.org/GetAnalyzedRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUniqueScriptNames">
+      <soap12:operation soapAction="http://tempuri.org/GetUniqueScriptNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchontarget">
+      <soap12:operation soapAction="http://tempuri.org/searchontarget" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_entry">
+      <soap12:operation soapAction="http://tempuri.org/update_entry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchonenUS">
+      <soap12:operation soapAction="http://tempuri.org/searchonenUS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchonidext_range">
+      <soap12:operation soapAction="http://tempuri.org/searchonidext_range" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchonidext">
+      <soap12:operation soapAction="http://tempuri.org/searchonidext" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SystemName">
+      <soap12:operation soapAction="http://tempuri.org/Get_SystemName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTables">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterTables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslate">
+      <soap12:operation soapAction="http://tempuri.org/PreTranslate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <soap12:operation soapAction="http://tempuri.org/UpdateActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap12:operation soapAction="http://tempuri.org/GetUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivity">
+      <soap12:operation soapAction="http://tempuri.org/GetUserActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousDateRecords">
+      <soap12:operation soapAction="http://tempuri.org/GetPreviousDateRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCloud">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCloud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslateFromCloud">
+      <soap12:operation soapAction="http://tempuri.org/PreTranslateFromCloud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInstanceList">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerInstanceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPretranslateFileID">
+      <soap12:operation soapAction="http://tempuri.org/GetPretranslateFileID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestXliff">
+      <soap12:operation soapAction="http://tempuri.org/TestXliff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranslation">
+      <soap12:operation soapAction="http://tempuri.org/GetTranslation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreTranslateFromCloud_New">
+      <soap12:operation soapAction="http://tempuri.org/PreTranslateFromCloud_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_DBCorrections">
+      <soap12:operation soapAction="http://tempuri.org/Update_DBCorrections" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCloud">
+      <soap12:operation soapAction="http://tempuri.org/SearchCloud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnalyzedRecord">
+      <soap12:operation soapAction="http://tempuri.org/GetAnalyzedRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://10.66.9.51:8013/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://10.66.9.51:8013/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

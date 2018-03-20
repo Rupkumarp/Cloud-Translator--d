@@ -1,0 +1,16 @@
+﻿5.13 *** JOB REQ TEMPLATE DOCTYPE job-req-template/candidate-data-model/offer-detail-template/candidate-profile-data-model****
+<field-description>,0
+<field-label>,0
+<label>,0
+<enum-label>,0
+<status>,0
+<job-req-section-name>,0
+<signature-section-name>,0
+<status>,0
+<role-name>,0
+<enum-label>,0
+<status>,0
+<job-req-section-name>,0
+<signature-section-name>,0
+<status>,0
+<role-name>,0

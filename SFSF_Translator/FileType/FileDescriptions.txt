@@ -1,0 +1,184 @@
+﻿ID	Objectname(Using for Hana DB translate)	
+1.1	Picklist Values
+2.1	Employee File
+2.2	Employee File country specific
+2.3.23	Foundations Objects
+2.4	Foundations Objects country specific
+2.5	Picklists
+2.6	Workflow Notification Template
+3.1	Position 
+2.3.1	Business Unit
+2.3.2	Cost Center
+2.3.3	Country
+2.3.4	Currency 
+2.3.5	Currency Conversion
+2.3.6	Department
+2.3.7	Division
+2.3.8	Holiday
+2.3.9	Holiday Calendar
+2.3.10	HRISElements.csv
+2.3.11	Insurance Coverage
+2.3.12	Insurance Plan
+4.1	Time  Profile -Available Time Type
+4.1.2	Time Profile
+4.2	Time Type
+4.3	Time Account Type
+4.3.1	Time Recording Admissibility
+4.3.2	Time Recording Profile
+4.3.3	Time Type Group
+4.3.4	Time Valuation
+4.3.5	Time Record Filter
+4.8.1	Work Schedule
+4.8.2	Work Schedule Day
+2.3.13	Legal Entity
+2.3.14	Light Rule (Business Rule)
+2.3.15	Localized HRIS Element
+2.3.16	MDF Badge Template
+2.3.17	Message Definition
+2.3.21	Pay Scale Type
+2.3.18	Pay Scale Area
+2.3.19	Pay Scale Group
+2.3.20	Pay Scale Level
+2.3.22	Skills - Being reviewed by POIT
+2.3.24	Payment Method
+5.1	Requisition Route Map
+5.2	Requisition Template
+5.3	Candidate profile Template
+5.4	Application template
+5.5	Recruiting roles
+5.6	Application status SET 1 (142 no longer exist in master)
+5.7	Application status SET 82 (#82 does not exist in master)
+5.8	Application status SET 21 (#21 does not exist in master)
+5.9	Application status SET 41 (#21 does not exist in master)
+5.10	Interview Rating Scale
+5.11	Event Application template
+5.12	Internal recruiting Site
+5.13	Offer Detail template
+5.13.1	Offer Detail template
+5.14	Default Career Site
+5.15	Offer templates
+5.16	Question library
+5.17	Email templates – recruiting
+5.18	Email Notification templates
+5.19	Email Notification templates
+5.20	Manage Recruiting Settings
+5.21	Internal and External Applicant Search Settings
+6.1.1	Development Goals
+6.1.2	Development Goals
+6.2	Learning Activity
+6.3	Learning Activity with catalog
+6.4	Disciplinary Incident History
+6.5	Career Worksheet
+7.1	Succession Org Chart
+7.1.1	Data Model
+7.1.2	Data Model
+7.1.3	Data Model
+7.1.4	Data Model
+7.2	Talent Pools
+7.3.1	Matrix
+7.3.2	Matrix
+7.3.3	Matrix
+7.3.4	Matrix
+7.4	Talent Search
+7.5	Text Replacement
+8.1.1	Templates
+8.1.2	Templates
+8.1.3	Templates
+8.2.1	JOB_Description
+8.2.2	JOB_Description
+8.2.3	JOB_Description
+8.2.4	JOB_Description
+8.2.5	JOB_Profiles
+8.2.6	JOB_Profiles
+8.3	JOB_Skills
+8.4	JOB_Competencies
+8.4.1	JOB_Competencies
+8.5	JOB_Competencies
+8.6	JOB_Competencies
+8.6.1	JOB_Profiles
+8.7	Job Classification
+9.1a	Translation_Compensation Workbo
+9.1b	Translation_Compensation Workbo
+9.1c 	Translation_Compensation Workbo
+9.1d	Translation_Compensation Workbo
+9.2	Manage Configuration UI
+10.1.1	Goal plans
+10.1.2	Goal plans
+10.1.3	Goal plans
+10.1.4	Goal plans
+10.1.5	Goal plans
+10.1.6	Goal plans
+10.2	Goal plans
+10.3	Goal plans
+10.4.1	Performance Evaluation
+10.4.2	Performance Evaluation
+10.4.3	Performance Evaluation
+10.4.4	Performance Evaluation
+10.4.5	Performance Evaluation
+10.5	Performance Review
+10.6.1	Development plan Review
+10.6.2	Development plan Review
+10.7	Disciplinary Incident Report
+10.8	Role Readiness Assessment
+10.9	Talent Review
+10.10	Rating Scales
+10.11	Route Maps
+10.12	PM form NAMES
+10.13	Interview Guide
+11.1.1	Employee profile
+11.1.2	Employee profile
+12.1	Formlabel keys for PM forms translation
+13.1	Competencies -> Ratin Criteria
+13.2	Learning items
+13.3	Curricula
+13.4	Questionnaire Survey
+13.5	Deployment Location
+13.6	Completion status
+13.7	Delivery methods
+13.8	Item Types
+13.9	Subject Areas
+13.10	Rating scales
+13.11	Report group
+13.12	Programs
+13.13	Assignment Types
+13.14	Registration Status
+13.15	Approval Process
+13.16	Approval Roles
+14.1	All LMS content
+15.1	Report names
+15.2	Report names
+15.3	Design File Employee Layout
+16.1	Personal Data - Personal Information
+16.2	Personal Data - Job Information
+16.3	Personal Data - Address & Contact Information
+16.4	Personal Data - Formal Education (Multiple)
+16.5	Personal Data - Certifications/Licenses (Multiple)
+16.6	Personal Data - Work Experience within Company (Multiple)
+16.7	Personal Data - Previous Employment (Multiple)
+17.1	Executive Report
+18.1.1	RMK Front End - Headers
+18.1.2	RMK Front End - Headers
+18.1.3	RMK Front End - Headers
+18.1.4	RMK Front End - Headers
+18.1.5	RMK Front End - Headers
+18.1.6	RMK Front End - Headers
+18.2	Command Center - Categories
+19.1.1	Custom Panel
+19.1.2	Custom Panel
+19.1.3	Custom Panel
+19.1.4	Custom Panel
+19.1.5	Custom Panel
+20.1	Goal Plan
+21.1	Performance Review - Objectives
+21.2	Performance Review - Core Values
+21.3	Performance Review - Role Specific Competencies
+21.4	Performance Review - Mid Year Comments
+21.5	Performance Review - Summary
+23.1	Career Development Plan - Development Goals Multiple
+24.1	Learning Content - Learning Items Multiple
+25.1	Jam Group - Tab 1 Title Multiple panel 1
+25.2	Jam Group - Tab 1 Title Multiple panel 2
+25.3	Jam Group - Tab 1 Title Multiple panel 3
+25.4	Jam Group - Tab 2 Title Multiple panel 1
+25.5	Jam Group - Tab 2 Title Multiple panel 2
+25.6	Jam Group - Tab 2 Title Multiple panel 3
